@@ -13,7 +13,7 @@ const App = () => {
   const { currentUser, isLoading, fetchUserInfo } = useUserStore();
   const { chatId } = useChatStore();
 
-  console.log("from app.jsx")
+  console.log("from app.jsx", currentUser)
 
   useEffect(() => {
     const unSub = onAuthStateChanged(auth, (user) => {
