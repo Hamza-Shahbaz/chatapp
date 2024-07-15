@@ -32,6 +32,10 @@ const ChatList = () => {
       });
     };
 
+    if(currentUser.id) {
+      unSub()
+    }
+
     return () => {
       unSub();
     };
