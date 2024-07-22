@@ -111,31 +111,6 @@ const Chat = () => {
       });
 
       const userIDs = [currentUser.id, user.id];
-
-      userIDs.forEach(async (id) => {
-        console.log("here", userIDs);
-        // const userChatsRef = doc(db, "userchats", id);
-        // const userChatsSnapshot = await getDoc(userChatsRef);
-
-        // console.log(userChatsSnapshot);
-
-        // if (userChatsSnapshot.exists()) {
-        //   const userChatsData = userChatsSnapshot.data();
-
-        //   const chatIndex = userChatsData.chats.findIndex(
-        //     (c) => c.chatId === chatId
-        //   );
-
-        //   userChatsData.chats[chatIndex].lastMessage = text;
-        //   userChatsData.chats[chatIndex].isSeen =
-        //     id === currentUser.id ? true : false;
-        //   userChatsData.chats[chatIndex].updatedAt = Date.now();
-
-        //   await updateDoc(userChatsRef, {
-        //     chats: userChatsData.chats,
-        //   });
-        // }
-      });
     } catch (err) {
       console.log(err);
     } finally {
